@@ -1092,7 +1092,7 @@ function QuineMcCluskey(parentDivId, columns, language) {
             myCell.innerHTML = "1";
           }
           if (this.data.funcdata[i] === 2) {
-            myCell.innerHTML = "*";
+            myCell.innerHTML = "X";
           }
         }
         myRow.appendChild(myCell);

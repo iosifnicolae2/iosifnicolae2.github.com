@@ -118,11 +118,11 @@ function KarnaughMapDataCtrl(qmcRef) {
   };
 
   this.getKVFieldPositionX = function (fieldId) {
-    return this.fields[fieldId].position[0] + 15;
+    return this.fields[fieldId].position[0];
   };
 
   this.getKVFieldPositionY = function (fieldId) {
-    return this.fields[fieldId].position[1] + 15;
+    return this.fields[fieldId].position[1];
   };
 
   this.getKVFieldTruthmapID = function (fieldId) {
@@ -656,7 +656,7 @@ function KarnaughMap(parentDivId, qmcRef) {
       for (var i = 0; i < 4; i++) {
         var fieldPosX = data.getKVFieldPositionX(i);
         var fieldPosY = data.getKVFieldPositionY(i) - data.fieldHeight - 3;
-        var dn = new UIElement(fieldPosX, fieldPosY, data.fieldWidth, data.fieldHeight, 0, i, 0, 0);
+        var dn = new UIElement(fieldPosX, fieldPosY, data.fieldWidth, data.fieldHeight, -1, i, 0, 0);
 
         var strokeColor = "#000000";
         var fillColor = "#e2e2e2";
@@ -689,13 +689,11 @@ function KarnaughMap(parentDivId, qmcRef) {
         text.textContent = getTableHeader(i);
         svg.appendChild(text);
 
-        uiElements.push(dn);
-
       }
           for (var i = 0; i < 4; i++) {
             var fieldPosX = data.getKVFieldPositionX(0) - data.fieldHeight - 3;
             var fieldPosY = data.getKVFieldPositionY(i) + data.fieldHeight*i;
-            var dn = new UIElement(fieldPosX, fieldPosY, data.fieldWidth, data.fieldHeight, 0, i, 0, 0);
+            var dn = new UIElement(fieldPosX, fieldPosY, data.fieldWidth, data.fieldHeight, 1, i, 0, 0);
 
             var strokeColor = "#000000";
             var fillColor = "#e2e2e2";
@@ -727,8 +725,6 @@ function KarnaughMap(parentDivId, qmcRef) {
             text.setAttribute("y", posY.toString());
             text.textContent = getTableHeader(i);
             svg.appendChild(text);
-
-            uiElements.push(dn);
 
           }
     }
