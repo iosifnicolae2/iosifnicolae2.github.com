@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=240" />
-    <title>Karnaugh-Veitch Map</title>
+    <title>Diagrama Veitch Karnaugh</title>
     <script src='./karnaughmap.js'></script>
     <script src='./qmc.js'></script>
     <script language="JavaScript" type="text/javascript">
@@ -42,10 +42,8 @@
   <body onload="run();">
 
 
-    <h1>Karnaugh-Veitch Map</h1>
-    <p>This interactive Karnaugh-Veitch map represents the function  <span class="qmcMathFont"><i>y</i>&nbsp;=&nbsp;f(<i>x</i><sub><small>n</small></sub>,...,<i>x</i><sub><small>1</small></sub>, <i>x</i><sub><small>0</small></sub>)</span>.
-      You can manually edit this function by clicking on the cells of the map. Alternatively, you can generate a random function by pressing the "Random example" button.</p>
-    <p>
+    <h1>Diagrama Veitch Karnaugh</h1>
+
       <button type="button" onclick="karnaugh.genRandom();">Random example</button> <button type="button" onclick="karnaugh.clear();">Reset</button><br>
       Number of input variables:
       <select onchange="noOfVarsChanged();" id="noOfVarsChanged_id">
@@ -73,9 +71,16 @@
 
     <div id="myQmcDisplay"></div>
 
-    <p> The JavaScript source code can be found here: <a href="./karnaughmap.js">karnaughmap.js</a>, <a href="./qmc.js">qmc.js</a>.</p>
-    <p> This website is part of the lecture <a href="http://www.uni-marburg.de/fb12/grafikmultimedia/lehre/ti1">Technical Computer Science I</a>.  </p>
-    <p> Keywords: Karnaugh map simulator, Karnaugh map simulation, virtual Karnaugh map, online Karnaugh maps, interactive Karnaugh map, Karnaugh-Veitch map, KV map, html5, javascript, </p>
+    <p> The JavaScript source code can be found on <a href="https://github.com/iosifnicolae2/iosifnicolae2.github.com">Github</a></p>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116458324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116458324-1');
+    </script>
 
   </body>
 </html>
