@@ -42,9 +42,9 @@ function KarnaughMapDataCtrl(qmcRef) {
   this.fields = new Array();
   this.blocks = new Array();
   this.allowDontCare = true;
+  this.fm = 0;
 
   this.init = function (no) {
-
     this.noOfVars = no;
 
     this.qmc.setNoOfVars(no);
@@ -145,7 +145,18 @@ function KarnaughMapDataCtrl(qmcRef) {
   };
 
   this.getKVFieldValue = function (fieldId) {
-    return this.fields[fieldId].value;
+    if(this.fm == 0) {
+      return this.fields[fieldId].value;
+    } else {
+      switch(this.fields[fieldId].value) {
+        case 0:
+         return 1;
+        case 1:
+          return 0;
+        default:
+            return 2;
+      }
+    }
   };
 
   this.activated = function (fieldId) {
@@ -344,6 +355,11 @@ function KarnaughMap(parentDivId, qmcRef) {
     this.update();
   };
 
+  this.changeFM = function(fm_value) {
+    data.fm = fm_value;
+    this.update();
+  }
+
   this.setDontShowResult = function (type) {
     if (type > 0) {
       dontShowResult = true;
@@ -418,6 +434,7 @@ function KarnaughMap(parentDivId, qmcRef) {
     var text = document.createElementNS(svgns, 'text');
 
     var textColor = "#000000";
+
     if (value >= 2) {
       value = "*";
       textColor = "#C8C8C8";

@@ -34,6 +34,11 @@
         karnaugh.setDontShowResult(d);
       }
 
+      function changeFM() {
+        var d = document.getElementById("select_fm_type").value;
+        karnaugh.changeFM(d);
+      }
+
     </script>
     <style type="text/css">
       .qmcMathFont{font-family:"Times New Roman",Georgia,Serif;}
@@ -66,6 +71,10 @@
       <select onchange="dontShowChanged();" id="select_dontShow">
         <option value="0" selected>no</option>
         <option value="1">Yes</option>
+      </select> &nbsp;&nbsp;&nbsp;&nbsp; Forma canonica:
+      <select onchange="changeFM();" id="select_fm_type">
+        <option value="0" selected>disjunctiva</option>
+        <option value="1">conjunctiva</option>
       </select>  <br>
     </p>
 
