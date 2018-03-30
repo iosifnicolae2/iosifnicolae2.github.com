@@ -523,13 +523,11 @@ function QuineMcCluskeyDataCtrl() {
               var needed = (~primTerm.implicant.bitMask);
               for (var v = 0; v < this.noOfVars; v++) {
                 if ((needed & one) === one) {
-                  var first = (one === 1);
                   if ((thisVal & one) === one) {
-                    minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + ((fm === 0 || first)? "":" + ") + minTerm;
+                    minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + minTerm;
                   } else {
-                    minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + ((fm === 0 || first)? "":" + ") + minTerm;
+                    minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + minTerm;
                   }
-                  //
                 }
                 one = one << 1;
               }
@@ -785,10 +783,11 @@ function QuineMcCluskeyDataCtrl() {
       var firstL = true;
       for (var i = 0; i < this.minimalTermPrims.length; i++) {
         if (!firstL) {
-          this.minimalTerm += ((fm === 0)?" + ":" * ");
-          this.coloredMinimalTerm += ((fm === 0)?" + ":" * ");
+          this.minimalTerm += (fm == 0)?" + ":" * ";
+          this.coloredMinimalTerm += (fm == 0)?" + ":" * ";
         }
         this.minimalTerm += this.minimalTermPrims[i].termString;
+        
         this.coloredMinimalTerm += this.minimalTermPrims[i].coloredTermString;
         firstL = false;
       }

@@ -523,11 +523,12 @@ function QuineMcCluskeyDataCtrl() {
               var needed = (~primTerm.implicant.bitMask);
               for (var v = 0; v < this.noOfVars; v++) {
                 if ((needed & one) === one) {
-                  var first = (one === 1);
+                    var latest = 0;
+                    
                   if ((thisVal & one) === one) {
-                    minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + ((fm === 0 || first)? "":" + ") + minTerm;
+                    minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + ((fm === 0 || latest)? "":" + ") + minTerm;
                   } else {
-                    minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + ((fm === 0 || first)? "":" + ") + minTerm;
+                    minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + ((fm === 0 || latest)? "":" + ") + minTerm;
                   }
                   //
                 }

@@ -10,6 +10,7 @@
     <script language="JavaScript" type="text/javascript">
       var karnaugh = -1;
       var qmc = -1;
+      var fm = 0;
       function run() {
         qmc = new QuineMcCluskey("fakeDivId", 2, 4, 0);
         //qmc = new QuineMcCluskey("myQmcDisplay", 2, 4, 0); // enable for debugging
@@ -35,8 +36,9 @@
       }
 
       function changeFM() {
-        var d = document.getElementById("select_fm_type").value;
-        karnaugh.changeFM(d);
+        fm = document.getElementById("select_fm_type").value;
+        karnaugh.update();
+        setTimeout(function(){karnaugh.update();},20);
       }
 
     </script>

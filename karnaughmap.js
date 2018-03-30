@@ -42,7 +42,6 @@ function KarnaughMapDataCtrl(qmcRef) {
   this.fields = new Array();
   this.blocks = new Array();
   this.allowDontCare = true;
-  this.fm = 0;
 
   this.init = function (no) {
     this.noOfVars = no;
@@ -145,7 +144,7 @@ function KarnaughMapDataCtrl(qmcRef) {
   };
 
   this.getKVFieldValue = function (fieldId) {
-    if(this.fm == 0) {
+    if(fm == 0) {
       return this.fields[fieldId].value;
     } else {
       switch(this.fields[fieldId].value) {
@@ -354,11 +353,6 @@ function KarnaughMap(parentDivId, qmcRef) {
     data.clear();
     this.update();
   };
-
-  this.changeFM = function(fm_value) {
-    data.fm = fm_value;
-    this.update();
-  }
 
   this.setDontShowResult = function (type) {
     if (type > 0) {
@@ -895,7 +889,7 @@ function KarnaughMap(parentDivId, qmcRef) {
       if (value >= 2)
         value = "*";
       valueString = "&nbsp;f(" + valueString + ") = " + value;
-      //valueString += " (ID: " + hooveredKVField + ")";
+      // valueString += " (ID: " + hooveredKVField + ")";
       var textX = Math.floor(hooveredKVField % data.fieldPerLine) * data.fieldWidth + Math.floor(data.fieldWidth * 0.8) + data.fieldBorder;
       var textY = Math.floor(hooveredKVField / data.fieldPerLine) * data.fieldHeight + Math.floor(data.fieldHeight * 0.1) + data.fieldBorder;
       var style = overlayStyle2 + 'top:' + textY + 'px; left:' + textX + 'px;';
@@ -910,13 +904,17 @@ function KarnaughMap(parentDivId, qmcRef) {
     // draw minterm
     var termX = data.fieldBorder;
     var termY = data.fieldHeight * data.fieldLines + data.fieldBorder;
-    var termStyle = resultStyle + 'max-width:' + data.fieldPerLine * data.fieldWidth + 'px;';
+    var termStyle = resultStyle + 'max-width: 600 px;';
     overlays[data.noOfVars + 1].setAttribute('style', termStyle);
     if(!dontShowResult) {
       overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>y</i>&nbsp;=&nbsp;" + qmc.data.coloredMinimalTerm + "</span></p>";
     }else{
       overlays[data.noOfVars + 1].innerHTML = "<span class='qmcMathFont'><i>y</i>&nbsp;=&nbsp;" + "<span style='color:rgb(255,0,0)'>hidden</span>"+ "</span></p>";
     }
+    console.log(data)
+    data.qmc.data.compute();
+    data.qmc.update();
+    data.compute();
   };
 
   function mouseOverElement(pos) {
