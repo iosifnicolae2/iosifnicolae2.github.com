@@ -516,6 +516,7 @@ function QuineMcCluskeyDataCtrl() {
             primTerm.implicant = g[j];
 
             // extract minTerm as string
+            console.log("primTerm.implicant.imp", primTerm.implicant.imp, this.noOfVars)
             for (var thisVal in primTerm.implicant.imp) {
               var minTerm = "";
               var one = 1;
@@ -530,6 +531,11 @@ function QuineMcCluskeyDataCtrl() {
                 }
                 one = one << 1;
               }
+              minTerm = minTerm.replace("<small>3</small>", "<small changed=true>1</small>");
+              minTerm = minTerm.replace("<small>2</small>", "<small changed=true>2</small>");
+              minTerm = minTerm.replace("<small>1</small>", "<small changed=true>3</small>");
+              minTerm = minTerm.replace("<small>0</small>", "<small changed=true>4</small>");
+
               minTerm = "(" + minTerm + ")";
               if (primTerm.implicant.bitMask === Math.pow(2, this.noOfVars) - 1)
                 minTerm = "1";

@@ -72,45 +72,60 @@ function KarnaughMapDataCtrl(qmcRef) {
       }
     }
 
-    var mapped = 0;
+    // var mapped = 0;
+    // this.fields[0].truthmapID = 0;
+    // this.fields[1].truthmapID = 1;
+    // var mirrorDirection = 0;
+    // var mirrorXCount = 2;
+    // var mirrorYCount = 1;
+    // var mapped = 2;
+    // var x = 0;
+    // var y = 1;
+    // var loop = 0;
+    // var direction = 0;
+    // while (loop < this.noOfVars - 1) {
+    //   for (var xx = 0; xx < mirrorXCount; xx++) {
+    //     for (var yy = 0; yy < mirrorYCount; yy++) {
+    //       var loc = xx + yy * this.fieldPerLine;
+    //
+    //       if (direction === 0) {
+    //         var mirrorLoc = (x + xx) + (y + (mirrorYCount - 1) - yy) * this.fieldPerLine;
+    //         this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorXCount * mirrorYCount;
+    //       } else {
+    //         var mirrorLoc = (x + (mirrorXCount - 1) - xx) + (y + yy) * this.fieldPerLine;
+    //         this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorYCount * mirrorYCount;
+    //       }
+    //     }
+    //   }
+    //   if (direction === 0) {
+    //     mirrorYCount = mirrorYCount * 2;
+    //     x = mirrorXCount;
+    //     y = 0;
+    //     direction = 1;
+    //   } else {
+    //     mirrorXCount = mirrorXCount * 2;
+    //     y = mirrorYCount;
+    //     x = 0;
+    //     direction = 0;
+    //   }
+    //   loop++;
+    // }
     this.fields[0].truthmapID = 0;
-    this.fields[1].truthmapID = 1;
-    var mirrorDirection = 0;
-    var mirrorXCount = 2;
-    var mirrorYCount = 1;
-    var mapped = 2;
-    var x = 0;
-    var y = 1;
-    var loop = 0;
-    var direction = 0;
-    while (loop < this.noOfVars - 1) {
-      for (var xx = 0; xx < mirrorXCount; xx++) {
-        for (var yy = 0; yy < mirrorYCount; yy++) {
-          var loc = xx + yy * this.fieldPerLine;
-
-          if (direction === 0) {
-            var mirrorLoc = (x + xx) + (y + (mirrorYCount - 1) - yy) * this.fieldPerLine;
-            this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorXCount * mirrorYCount;
-          } else {
-            var mirrorLoc = (x + (mirrorXCount - 1) - xx) + (y + yy) * this.fieldPerLine;
-            this.fields[mirrorLoc].truthmapID = this.fields[loc].truthmapID + mirrorYCount * mirrorYCount;
-          }
-        }
-      }
-      if (direction === 0) {
-        mirrorYCount = mirrorYCount * 2;
-        x = mirrorXCount;
-        y = 0;
-        direction = 1;
-      } else {
-        mirrorXCount = mirrorXCount * 2;
-        y = mirrorYCount;
-        x = 0;
-        direction = 0;
-      }
-      loop++;
-    }
-
+    this.fields[1].truthmapID = 4;
+    this.fields[2].truthmapID = 12;
+    this.fields[3].truthmapID = 8;
+    this.fields[4].truthmapID = 1;
+    this.fields[5].truthmapID = 5;
+    this.fields[6].truthmapID = 13;
+    this.fields[7].truthmapID = 9;
+    this.fields[8].truthmapID = 3;
+    this.fields[9].truthmapID = 7;
+    this.fields[10].truthmapID = 15;
+    this.fields[11].truthmapID = 11;
+    this.fields[12].truthmapID = 2;
+    this.fields[13].truthmapID = 6;
+    this.fields[14].truthmapID = 14;
+    this.fields[15].truthmapID = 10;
   };
 
   this.getKVFieldsCount = function () {
@@ -931,7 +946,7 @@ function KarnaughMap(parentDivId, qmcRef) {
     hooveredKVField = -1;
     var oldHooveredElement = hooveredElement;
     hooveredElement = mouseOverElement(pos);
-    console.log(hooveredElement);
+    // console.log(hooveredElement);
     if (hooveredElement !== -1) {
       hooveredKVField = uiElements[hooveredElement].ref;
     }
@@ -956,7 +971,7 @@ function KarnaughMap(parentDivId, qmcRef) {
     mx = e.pageX - offsetX;
     my = e.pageY - offsetY;
 
-    console.log(mx + " " + my);
+    // console.log(mx + " " + my);
     return {x: mx, y: my};
   }
 }
