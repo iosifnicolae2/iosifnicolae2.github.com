@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922ebd83-298c-4ca6-9144-8a7f06f8a9dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/qmc.js" afterPath="$PROJECT_DIR$/qmc.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/karnaughmap.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="911" column="99" lean-forward="false" selection-start-line="911" selection-start-column="94" selection-end-line="911" selection-end-column="99" />
+              <caret line="63" column="14" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -25,30 +25,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qmc.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qmc.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qmc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="529" column="103" lean-forward="false" selection-start-line="529" selection-start-column="103" selection-end-line="529" selection-end-column="103" />
+            <state relative-caret-position="281">
+              <caret line="524" column="45" lean-forward="true" selection-start-line="524" selection-start-column="45" selection-end-line="524" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1522433549596" expanded="true" signature="5572:5578" ph="⇔" />
-                <marker date="1522433549596" expanded="true" signature="5578:5584" ph=" " />
-                <marker date="1522433549596" expanded="true" signature="13997:14003" ph="..." />
-                <marker date="1522433549596" expanded="true" signature="15071:15077" ph="..." />
-                <marker date="1522433549596" expanded="true" signature="28824:28836" ph="..." />
-                <marker date="1522433549596" expanded="true" signature="28838:28845" ph="..." />
-                <marker date="1522433549596" expanded="true" signature="29199:29205" ph=" " />
-                <marker date="1522433549596" expanded="true" signature="29205:29212" ph="≡" />
-                <marker date="1522433549596" expanded="true" signature="29212:29218" ph=" " />
-                <marker date="1522433549596" expanded="true" signature="35235:35241" ph=" " />
-                <marker date="1522433549596" expanded="true" signature="35242:35248" ph=" " />
+                <marker date="1522434211402" expanded="true" signature="5572:5578" ph="⇔" />
+                <marker date="1522434211402" expanded="true" signature="5578:5584" ph=" " />
+                <marker date="1522434211402" expanded="true" signature="14018:14024" ph="..." />
+                <marker date="1522434211402" expanded="true" signature="15100:15106" ph="..." />
+                <marker date="1522434211402" expanded="true" signature="28853:28865" ph="..." />
+                <marker date="1522434211402" expanded="true" signature="28867:28874" ph="..." />
+                <marker date="1522434211402" expanded="true" signature="29228:29234" ph=" " />
+                <marker date="1522434211402" expanded="true" signature="29234:29241" ph="≡" />
+                <marker date="1522434211402" expanded="true" signature="29241:29247" ph=" " />
+                <marker date="1522434211402" expanded="true" signature="35264:35270" ph=" " />
+                <marker date="1522434211402" expanded="true" signature="35271:35277" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
@@ -72,6 +72,7 @@
       <find>&lt;sub</find>
       <find>&quot; + &quot;</find>
       <find>sub&gt;+</find>
+      <find>var first</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,8 +81,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/qmc.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/qmc.js" />
       </list>
     </option>
   </component>
@@ -194,7 +195,7 @@
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Quokka" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -246,10 +247,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="87" column="133" lean-forward="false" selection-start-line="87" selection-start-column="133" selection-end-line="87" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/karnaughmap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="911" column="99" lean-forward="false" selection-start-line="911" selection-start-column="94" selection-end-line="911" selection-end-column="99" />
+          <caret line="63" column="14" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -258,30 +267,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qmc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="529" column="103" lean-forward="false" selection-start-line="529" selection-start-column="103" selection-end-line="529" selection-end-column="103" />
+        <state relative-caret-position="281">
+          <caret line="524" column="45" lean-forward="true" selection-start-line="524" selection-start-column="45" selection-end-line="524" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1522433549596" expanded="true" signature="5572:5578" ph="⇔" />
-            <marker date="1522433549596" expanded="true" signature="5578:5584" ph=" " />
-            <marker date="1522433549596" expanded="true" signature="13997:14003" ph="..." />
-            <marker date="1522433549596" expanded="true" signature="15071:15077" ph="..." />
-            <marker date="1522433549596" expanded="true" signature="28824:28836" ph="..." />
-            <marker date="1522433549596" expanded="true" signature="28838:28845" ph="..." />
-            <marker date="1522433549596" expanded="true" signature="29199:29205" ph=" " />
-            <marker date="1522433549596" expanded="true" signature="29205:29212" ph="≡" />
-            <marker date="1522433549596" expanded="true" signature="29212:29218" ph=" " />
-            <marker date="1522433549596" expanded="true" signature="35235:35241" ph=" " />
-            <marker date="1522433549596" expanded="true" signature="35242:35248" ph=" " />
+            <marker date="1522434211402" expanded="true" signature="5572:5578" ph="⇔" />
+            <marker date="1522434211402" expanded="true" signature="5578:5584" ph=" " />
+            <marker date="1522434211402" expanded="true" signature="14018:14024" ph="..." />
+            <marker date="1522434211402" expanded="true" signature="15100:15106" ph="..." />
+            <marker date="1522434211402" expanded="true" signature="28853:28865" ph="..." />
+            <marker date="1522434211402" expanded="true" signature="28867:28874" ph="..." />
+            <marker date="1522434211402" expanded="true" signature="29228:29234" ph=" " />
+            <marker date="1522434211402" expanded="true" signature="29234:29241" ph="≡" />
+            <marker date="1522434211402" expanded="true" signature="29241:29247" ph=" " />
+            <marker date="1522434211402" expanded="true" signature="35264:35270" ph=" " />
+            <marker date="1522434211402" expanded="true" signature="35271:35277" ph=" " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="87" column="133" lean-forward="false" selection-start-line="87" selection-start-column="133" selection-end-line="87" selection-end-column="133" />
-          <folding />
         </state>
       </provider>
     </entry>
