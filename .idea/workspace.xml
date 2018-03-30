@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="922ebd83-298c-4ca6-9144-8a7f06f8a9dd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/karnaughmap.js" afterPath="$PROJECT_DIR$/karnaughmap.js" />
-      <change beforePath="$PROJECT_DIR$/qmc.js" afterPath="$PROJECT_DIR$/qmc.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qmc.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qmc.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qmc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="433">
@@ -50,6 +48,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="87" column="133" lean-forward="false" selection-start-line="87" selection-start-column="133" selection-end-line="87" selection-end-column="133" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -63,6 +71,7 @@
       <find>essentialPrimTerms</find>
       <find>&lt;sub</find>
       <find>&quot; + &quot;</find>
+      <find>sub&gt;+</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,8 +80,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/qmc.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -237,14 +246,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/karnaughmap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -273,6 +274,14 @@
             <marker date="1522433549596" expanded="true" signature="35235:35241" ph=" " />
             <marker date="1522433549596" expanded="true" signature="35242:35248" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="87" column="133" lean-forward="false" selection-start-line="87" selection-start-column="133" selection-end-line="87" selection-end-column="133" />
+          <folding />
         </state>
       </provider>
     </entry>
