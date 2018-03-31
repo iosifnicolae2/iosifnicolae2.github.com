@@ -126,6 +126,23 @@ function KarnaughMapDataCtrl(qmcRef) {
       this.fields[13].truthmapID = 6;
       this.fields[14].truthmapID = 14;
       this.fields[15].truthmapID = 10;
+    } else if(code_type == 0) {
+      this.fields[0].truthmapID = 0;
+      this.fields[1].truthmapID = 4;
+      this.fields[2].truthmapID = 12;
+      this.fields[3].truthmapID = 8;
+      this.fields[4].truthmapID = 1;
+      this.fields[5].truthmapID = 5;
+      this.fields[6].truthmapID = 13;
+      this.fields[7].truthmapID = 9;
+      this.fields[8].truthmapID = 3;
+      this.fields[9].truthmapID = 7;
+      this.fields[10].truthmapID = 15;
+      this.fields[11].truthmapID = 11;
+      this.fields[12].truthmapID = 2;
+      this.fields[13].truthmapID = 6;
+      this.fields[14].truthmapID = 14;
+      this.fields[15].truthmapID = 10;
     }
   };
 

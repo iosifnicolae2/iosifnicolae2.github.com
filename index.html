@@ -11,6 +11,7 @@
       var karnaugh = -1;
       var qmc = -1;
       var fm = 0;
+      var code_type = 0;
       function run() {
         qmc = new QuineMcCluskey("fakeDivId", 2, 4, 0);
         //qmc = new QuineMcCluskey("myQmcDisplay", 2, 4, 0); // enable for debugging
@@ -37,6 +38,12 @@
 
       function changeFM() {
         fm = document.getElementById("select_fm_type").value;
+        karnaugh.update();
+        setTimeout(function(){karnaugh.update();},20);
+      }
+
+      function changeCodeType() {
+        code_type = document.getElementById("select_code_type").value;
         karnaugh.update();
         setTimeout(function(){karnaugh.update();},20);
       }
@@ -77,7 +84,13 @@
       <select onchange="changeFM();" id="select_fm_type">
         <option value="0" selected>disjunctiva</option>
         <option value="1">conjunctiva</option>
-      </select>  <br>
+      </select>
+    <!--Tipul codului indicilor:-->
+      <!--<select onchange="changeCodeType();" id="select_code_type">-->
+        <!--<option value="0" selected>Cod Grey</option>-->
+        <!--<option value="1">Cod exces 3</option>-->
+      <!--</select>  -->
+    <br>
     </p>
 
 

@@ -523,12 +523,22 @@ function QuineMcCluskeyDataCtrl() {
               var needed = (~primTerm.implicant.bitMask);
               for (var v = 0; v < this.noOfVars; v++) {
                 if ((needed & one) === one) {
-                  dont_show_sign = minTerm.length === 0
-                  if ((thisVal & one) === one) {
-                    minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + ((fm == 0 || dont_show_sign)? "":" + ") + minTerm;
+                  var dont_show_sign = minTerm.length === 0;
+                  if(fm  == 0) {
+                      if ((thisVal & one) === one) {
+                      minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + ((fm == 0 || dont_show_sign)? "":" + ") + minTerm;
+                    } else {
+                      minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + ((fm == 0 || dont_show_sign)? "":" + ") + minTerm;
+                    }
                   } else {
-                    minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + ((fm == 0 || dont_show_sign)? "":" + ") + minTerm;
+                    // Trebuie negati termenii pentru FMC
+                      if ((thisVal & one) === one) {
+                        minTerm = "<i>x&#772;</i><sub><small>" + v + "</small></sub>" + ((fm == 0 || dont_show_sign)? "":" + ") + minTerm;
+                      } else {
+                        minTerm = "<i>x</i><sub><small>" + v + "</small></sub>" + ((fm == 0 || dont_show_sign)? "":" + ") + minTerm;
+                      }
                   }
+
                   //
                 }
                 one = one << 1;
