@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922ebd83-298c-4ca6-9144-8a7f06f8a9dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/karnaughmap.js" afterPath="$PROJECT_DIR$/karnaughmap.js" />
-      <change beforePath="$PROJECT_DIR$/qmc.js" afterPath="$PROJECT_DIR$/qmc.js" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp2424822379488120917.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp3654018054693685285.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp3666001276945933990.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp4184959222269347542.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp4404633872335505902.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp4723971477613636084.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp5701176221047179579.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp7371986595983802212.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/qmc_scsslint_tmp7889815357200149845.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/karnaughmap_scsslint_tmp4453637339965750642.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/karnaughmap_scsslint_tmp6655563475905104372.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/karnaughmap_scsslint_tmp7009979087477841346.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/karnaughmap_scsslint_tmp8561674880432017253.js" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -220,7 +210,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12271062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
